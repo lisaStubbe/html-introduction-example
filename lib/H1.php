@@ -1,16 +1,12 @@
 <?php
 
-class H1 
+require_once('Element.php');
+
+class H1 extends Element
 {
 
-    function __construct($title, $element = "h1")
+    function __construct($content)
     {
-        $this->title = $title;
-        $this->element = $element;
-    }
-
-    function __toString()
-    {
-        return "<$this->element>$this->title</$this->element>";
+       parent::__construct("h1", $content);
     }
 }

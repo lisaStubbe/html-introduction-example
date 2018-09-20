@@ -1,11 +1,11 @@
 <?php
 
-require_once('H1.php');
+require_once('Element.php');
 
-class P extends H1
+class P extends Element
 {
-    function __construct($text)
+    function __construct($content)
     {
-        parent::__construct($text, "p");
+        parent::__construct("p", $content);
     }
 }
