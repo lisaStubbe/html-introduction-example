@@ -1,11 +1,14 @@
 <?php
     require_once('lib/H1.php');
     require_once('lib/P.php');
+    require_once('lib/VoidElement.php');
 
     $title = new H1("Hello");
     $anotherTitle = new H1("Ola");
 
     $text = new P("lorem ipsum...");
+
+    $hr = new VoidElement('hr', ['class' => 'blue', 'id' => 'hello']);
 ?>
 
 <!DOCTYPE html>
@@ -21,6 +24,7 @@
     <?php echo $text; ?>
     ...
     ...
+    <?php echo $hr ?>
     <?php echo $anotherTitle; ?>
 </body>
 </html>
