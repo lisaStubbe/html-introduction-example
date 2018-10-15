@@ -20,6 +20,7 @@
     <title>PHP Example</title>
 </head>
 <body>
+    <img src="https://i.kinja-img.com/gawker-media/image/upload/s--WFkXeene--/c_scale,f_auto,fl_progressive,q_80,w_800/ol9ceoqxidudap8owlwn.jpg" alt="dog">
     <?php echo $title; ?>
     <?php echo $text; ?>
     ...
